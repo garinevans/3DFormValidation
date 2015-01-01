@@ -1,0 +1,94 @@
+$size: 60px;
+$form-width: 600px;
+
+$cube-width: 60px;
+$cube-height: 60px;
+
+$title-font: 'Pacifico', cursive;
+
+$placeholder-colour: #1C495C;
+
+body {
+	background-color: #245D76;
+	margin: 0;
+}
+
+p {
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.6em;
+	margin-top: 20px;
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+	color: rgb(159, 189, 209);
+
+	a {
+		color: rgb(159, 189, 209);
+		font-weight: 900;
+	}
+}
+
+form {
+	margin-top: 100px;
+	width: $form-width;
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+header {
+	height: 100px;
+	background-color: #286783;
+	padding: 20px 0;
+}
+
+header div {
+	width: $form-width;
+	margin: 0 auto;
+	color: #102B36;
+	font-size: 2em;
+	text-align: center;
+	font-weight: 900;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 3em;
+	color: rgb(163, 220, 238);
+}
+
+::-webkit-input-placeholder {
+   color: $placeholder-colour;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $placeholder-colour;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $placeholder-colour;  
+}
+
+:-ms-input-placeholder {  
+   color: $placeholder-colour;  
+}
+
+*:focus {
+    outline: 0;
+}
+
+.ie .not-supported {
+	display: block;
+}
+
+.ie .my-form {
+	display: none;
+}
+
+.ie header h1 {
+	display: none;
+}

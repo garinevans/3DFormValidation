@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Garin Evans - 3d Form Validation</title>
+	<meta name="description" content="Form validation using CSS3 3D transformations and transitions and a little Javascript">
+
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		
+
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->	
+	<!--[if !IE]><!--><link rel="stylesheet" type="text/css" href="css/3dvalidation.css" /><!--<![endif]-->
+
+</head>
+<body>
+
+	<header>
+		<h1>Enter your details!</h1>
+	</header>
+
+	<p>Thanks for stopping by. This is a quick demo I knocked up showing how to apply a neat little 3d effect to fullscreen form validations using CSS3 and a peppering of Javascript.<br><br>For other stuff I've made, or if you just want to get in touch, head along to my <a href="http://www.garinevans.com" alt="Garin Evans">main site</a>, or find me <a href="https://twitter.com/mrgarinevans" alt="Twitter">@mrgarinevans</a></p>
+
+	<form action="" novalidate class="my-form">
+		<div class="form-item">
+			<input type="text" required placeholder="First name..." />
+			<div class="cube">
+				<div class="cube-item cube-item-1" ></div>
+				<img src="images/tick.png" class="cube-item cube-item-2" />
+				<div class="cube-item cube-item-3" ></div>
+				<img src="images/cross.png" class="cube-item cube-item-4" />
+			</div>
+		</div>		
+		<div class="form-item">
+			<input type="text" required placeholder="Surname..." />
+			<div class="cube">
+				<div class="cube-item cube-item-1" ></div>
+				<img src="images/tick.png" class="cube-item cube-item-2" />
+				<div class="cube-item cube-item-3" ></div>
+				<img src="images/cross.png" class="cube-item cube-item-4" />
+			</div>
+		</div>		
+		<div class="form-item">
+			<input type="text" required placeholder="Age..." pattern="\d*" />
+			<div class="cube">
+				<div class="cube-item cube-item-1" ></div>
+				<img src="images/tick.png" class="cube-item cube-item-2" />
+				<div class="cube-item cube-item-3" ></div>
+				<img src="images/cross.png" class="cube-item cube-item-4" />
+			</div>
+		</div>		
+
+		<input type="submit" value="Submit" />
+		
+	</form>
+	<div class="not-supported">
+		<h1>So sorry</h1>
+		<p>Internet explorer doesn't properly support 3d transformations, I know this isn't particurlarly "Progressive Enhancement", but it's just a demo.<br><br>Just for now, please try using Chrome or Firefox<br><br>- Garin</p>
+	</div>
+
+	<script src="js/grin.min.js"></script>
+	<script src="js/jquery-1.9.1.min.js" ></script>
+	<script src="js/minimal-form.min.js"></script>
+</body>
+</html>

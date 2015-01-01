@@ -1,0 +1,121 @@
+body {
+  background-color: #245D76;
+  margin: 0; }
+
+form {
+  margin-top: 100px;
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 20px; }
+
+header {
+  height: 100px;
+  background-color: #286783;
+  padding: 20px 0; }
+
+header div {
+  width: 600px;
+  margin: 0 auto;
+  color: #102B36;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 900; }
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3em;
+  color: #a3dcee; }
+
+.cube {
+  height: 60px;
+  width: 60px;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  perspective: 10000px;
+  transform-style: preserve-3d;
+  float: right; }
+
+.cube-valid {
+  transform: rotateX(90deg); }
+
+.cube-error {
+  transform: rotateX(-90deg); }
+
+input[type="text"] {
+  float: left;
+  width: 540px;
+  border: none;
+  background-color: #3B99C2;
+  padding-left: 10px;
+  height: 60px;
+  font-size: 1.5em; }
+
+div.cube-item {
+  padding: 0; }
+
+.cube-item {
+  position: absolute;
+  display: block;
+  width: 60px;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  height: 60px;
+  border: none;
+  color: white;
+  background-color: #3B99C2;
+  font-size: 2em; }
+
+input[type="submit"] {
+  border: none;
+  background-color: #1C495C;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 15px;
+  float: right;
+  margin-top: 20px;
+  cursor: pointer; }
+
+.cube-item-1 {
+  transform: translate3d(0, 0, 30px); }
+
+.cube-item-2 {
+  transform: rotateX(-90deg) translate3d(0, 0, 30px); }
+
+.cube-item-3 {
+  transform: rotateX(180deg) translate3d(0, 0, 30px); }
+
+.cube-item-4 {
+  transform: rotateX(90deg) translate3d(0, 0, 30px); }
+
+.form-item {
+  margin-top: 20px;
+  height: 60px; }
+
+.hide {
+  opacity: 0; }
+
+::-webkit-input-placeholder {
+  color: #1C495C; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #1C495C; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #1C495C; }
+
+:-ms-input-placeholder {
+  color: #1C495C; }
+
+*:focus {
+  outline: 0; }
+
+.not-supported {
+  display: none; }
